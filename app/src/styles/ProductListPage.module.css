@@ -1,0 +1,158 @@
+.canvas {
+  width: 1440px;
+  height: 1457px;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.title {
+  position: absolute;
+  left: 99px;
+  top: 96px;
+  color: #252525;
+  font-size: 32px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.uploadButton {
+  position: absolute;
+  right: 100px;
+  top: 96px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 16px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  color: #252525;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.uploadButton:hover {
+  background: #f7f7f7;
+  border-color: #bcbcc0;
+}
+
+.searchWrap {
+  position: absolute;
+  left: 100px;
+  top: 176px;
+  width: 1240px;
+  height: 56px;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  background: #bcbcc0;
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  color: #252525;
+}
+
+.searchInput::placeholder {
+  color: #bcbcc0;
+}
+
+.card {
+  width: 200px;
+  height: 335px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.cardImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  cursor: default;
+}
+
+.cardTitle {
+  position: absolute;
+  left: 16px;
+  top: 216px;
+  color: #252525;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.cardCode {
+  position: absolute;
+  left: 16px;
+  top: 240px;
+  color: #6c6c70;
+  font-size: 12px;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.cardPrice {
+  position: absolute;
+  right: 16px;
+  top: 289px;
+  text-align: right;
+  color: #e13b30;
+  font-size: 20px;
+  font-family: Prompt, Poppins, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 190px;
+  height: 2px;
+  display: flex;
+  gap: 4px;
+  transform: translateX(-50%);
+  width: fit-content;
+}
+
+.dot {
+  width: 16px;
+  height: 2px;
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+
+.dot:hover {
+  background: #bcbcc0;
+}
+
+.dotActive {
+  width: 16px;
+  height: 2px;
+  background: #e13b30;
+  border-radius: 2px;
+}

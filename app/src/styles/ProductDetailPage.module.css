@@ -1,0 +1,166 @@
+.canvas {
+  width: 1440px;
+  height: 900px;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  width: 1240px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.backButton {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 16px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  font-family: Poppins, Arial, sans-serif;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.backButton:hover {
+  background: #f7f7f7;
+  border-color: #bcbcc0;
+}
+
+.title {
+  color: #252525;
+  font-size: 28px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.content {
+  position: absolute;
+  left: 100px;
+  top: 160px;
+  width: 1240px;
+  display: grid;
+  grid-template-columns: 760px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.gallery {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  padding: 16px;
+}
+
+.mainImageWrap {
+  width: 100%;
+  height: 560px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbs {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  padding: 0;
+  overflow: hidden;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.thumb:hover {
+  border-color: #bcbcc0;
+  transform: translateY(-1px);
+}
+
+.thumbActive {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  border: 2px solid #e04132;
+  background: #ffffff;
+  padding: 0;
+  overflow: hidden;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.thumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+}
+
+.name {
+  color: #252525;
+  font-size: 24px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.metaRow {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.metaLabel {
+  color: #6c6c70;
+  font-size: 12px;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.code {
+  color: #252525;
+  font-size: 14px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.price {
+  color: #e13b30;
+  font-size: 20px;
+  font-family: Prompt, Poppins, Arial, sans-serif;
+  font-weight: 600;
+}

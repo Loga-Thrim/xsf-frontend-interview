@@ -1,0 +1,257 @@
+.canvas {
+  width: 1440px;
+  height: 1146px;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.title {
+  position: absolute;
+  left: 99px;
+  top: 96px;
+  text-align: center;
+  color: #252525;
+  font-size: 32px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.uploadLabel {
+  position: absolute;
+  left: 258px;
+  top: 176px;
+  color: #252525;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.counter {
+  position: absolute;
+  left: 1064px;
+  top: 568px;
+  text-align: right;
+  color: #6c6c70;
+  font-size: 12px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.dropzone {
+  position: absolute;
+  left: 258px;
+  top: 210px;
+  width: 924px;
+  height: 350px;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.dropzone:hover {
+  border-color: #bcbcc0;
+  background: #fafafa;
+}
+
+.fileInput {
+  display: none;
+}
+
+.dropIcon {
+  width: 26px;
+  height: 27px;
+  background: #6c6c70;
+}
+
+.dropText {
+  text-align: center;
+  font-size: 14px;
+  font-family: Poppins, Arial, sans-serif;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.dropTextMuted {
+  color: #6c6c70;
+  font-weight: 400;
+}
+
+.dropTextLink {
+  color: #005fcc;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.dropHint {
+  text-align: center;
+  color: #6c6c70;
+  font-size: 12px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.previewInside {
+  margin-top: 16px;
+  width: 860px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 132px;
+  overflow: hidden;
+}
+
+.previewImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.fieldLabelName {
+  position: absolute;
+  left: 258px;
+  top: 600px;
+  color: #252525;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.inputName {
+  position: absolute;
+  left: 258px;
+  top: 634px;
+  width: 924px;
+  height: 56px;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  padding: 0 24px;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  outline: none;
+}
+
+.inputName::placeholder {
+  color: #d9d9d9;
+}
+
+.fieldLabelCode {
+  position: absolute;
+  left: 260px;
+  top: 714px;
+  color: #252525;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.inputCode {
+  position: absolute;
+  left: 258px;
+  top: 748px;
+  width: 924px;
+  height: 56px;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  padding: 0 24px;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  outline: none;
+}
+
+.inputCode::placeholder {
+  color: #d9d9d9;
+}
+
+.fieldLabelPrice {
+  position: absolute;
+  left: 260px;
+  top: 828px;
+  color: #252525;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.priceWrap {
+  position: absolute;
+  left: 258px;
+  top: 862px;
+  width: 924px;
+  height: 56px;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricePrefix {
+  color: #d9d9d9;
+  font-size: 16px;
+  font-family: Prompt, Poppins, Arial, sans-serif;
+}
+
+.priceInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.priceInput::placeholder {
+  color: #d9d9d9;
+}
+
+.cancelButton {
+  position: absolute;
+  left: 519px;
+  top: 990px;
+  padding: 16px 72px;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  color: #e13b30;
+  font-size: 16px;
+  font-family: Prompt, Poppins, Arial, sans-serif;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.cancelButton:hover {
+  background: #f7f7f7;
+  border-color: #bcbcc0;
+}
+
+.submitButton {
+  position: absolute;
+  left: 735px;
+  top: 990px;
+  padding: 16px 72px;
+  border-radius: 24px;
+  border: none;
+  background: #e04132;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Prompt, Poppins, Arial, sans-serif;
+  cursor: pointer;
+  transition: filter 120ms ease;
+}
+
+.submitButton:hover {
+  filter: brightness(0.95);
+}
